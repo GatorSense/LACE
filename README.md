@@ -48,13 +48,15 @@ The Learnable Adaptive Cosine Estimator (LACE) runs using the following function
 
 
 ## Parameters
-The parameters can be set in the following script or on the command line:
+The parameters can be set in the following script:
 
 ```Demo_Parameters.py```
 
 ## Inventory
 
 ```
+https://github.com/GatorSense/Histological_Segmetation
+
 └── root dir
     ├── demo.py   //Run this. Main demo file.
     ├── Demo_Parameters.py // Parameters file for demo.
@@ -68,4 +70,31 @@ The parameters can be set in the following script or on the command line:
         ├── Save_Results.py  // Save results from demo script.
 ```
 
+## License
 
+This source code is licensed under the license found in the [`LICENSE`](LICENSE) 
+file in the root directory of this source tree.
+
+This product is Copyright (c) 2021 J. Peeples, C. McCurley, S. Walker, D. Stewart, 
+and A. Zare. All rights reserved.
+
+## <a name="CitingHist"></a>Citing LACE
+
+If you use the LACE code, please cite the following 
+reference using the following entry.
+
+**Plain Text:**
+
+Peeples, J., McCurley, C., Walker, S., Stewart, D., & Zare, A. (2022). Learnable 
+Adaptive Cosine Estimator (LACE) for Image Classification. IEEE/CVF Winter 
+Conference on Applications of Computer Vision.
+
+**BibTex:**
+```
+@article{peeples2022learnable,
+  title={Learnable Adaptive Cosine Estimator (LACE) for Image Classification},
+  author={Peeples, Joshua and McCurley, Connor and Walker, Sarah, and Stewart, Dylan, and Zare, Alina},
+  journal={IEEE/CVF Winter Conference on Applications of Computer Vision},
+  year={2022}
+}
+```
