@@ -10,7 +10,7 @@ Zendo. https://doi.org/10.5281/zenodo.3731417
 
 [[`arXiv`](https://arxiv.org/abs/2001.00215)]
 
-[[`BibTeX`](#CitingHist)]
+[[`BibTeX`](#CitingLACE)]
 
 In this repository, we provide the paper and code for the Learnable Adaptive Cosine Estimator (LACE) approach in "Learnable Adaptive Cosine Estimator (LACE) for Image Classification."
 
@@ -61,10 +61,15 @@ https://github.com/GatorSense/Histological_Segmetation
     ├── demo.py   //Run this. Main demo file.
     ├── Demo_Parameters.py // Parameters file for demo.
     ├── Prepare_Data.py  // Load data for demo file.
+    ├── View_Results.py  // Generate visuals and metrics for experiments.
+    └── Visualize_Embeddings.py  //Generate LACE visualizations (target vs. background).
     └── Utils  //utility functions
         ├── Embedding_Model.py  // Generates model with an encoder following the final layer (if necessary). 
         ├── loss_functions.py  // Contains LACE, angular softmax, and feature regularization methods for models.
         ├── Loss_Model.py  // Creates model with backbone and regularization loss.
+        ├── Confusion_mats.py  // Compute confusion matrices for results. 
+        ├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
+        ├── Generate_TSNE_visual.py  // Create TSNE visual for results.
         ├── Network_functions.py  // Contains functions to initialize, train, and test model. 
         ├── pytorchtools.py // Function for early stopping.
         ├── Save_Results.py  // Save results from demo script.
@@ -78,7 +83,7 @@ file in the root directory of this source tree.
 This product is Copyright (c) 2021 J. Peeples, C. McCurley, S. Walker, D. Stewart, 
 and A. Zare. All rights reserved.
 
-## <a name="CitingHist"></a>Citing LACE
+## <a name="CitingLACE"></a>Citing LACE
 
 If you use the LACE code, please cite the following 
 reference using the following entry.
@@ -91,10 +96,11 @@ Conference on Applications of Computer Vision.
 
 **BibTex:**
 ```
-@article{peeples2022learnable,
-  title={Learnable Adaptive Cosine Estimator (LACE) for Image Classification},
-  author={Peeples, Joshua and McCurley, Connor and Walker, Sarah, and Stewart, Dylan, and Zare, Alina},
-  journal={IEEE/CVF Winter Conference on Applications of Computer Vision},
-  year={2022}
+@InProceedings{Peeples_2022_WACV,
+  title = {Learnable Adaptive Cosine Estimator (LACE) for Image Classification},
+  author = {Peeples, Joshua and McCurley, Connor and Walker, Sarah, and Stewart, Dylan, and Zare, Alina},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  month = {January},
+  year = {2022},
 }
 ```
