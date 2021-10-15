@@ -4,11 +4,11 @@
 _Joshua Peeples, Connor McCurley, Sarah Walker, Dylan Stewart, and Alina Zare_
 
 Note: If this code is used, cite it: Joshua Peeples, Connor McCurley, Sarah Walker, Dylan Stewart, and Alina Zare. 
-(2021, October 5). GatorSense/LACE: Initial Release (Version v1.0). 
+(2021, October 15). GatorSense/LACE: Initial Release (Version v1.0). 
 Zendo. https://doi.org/10.5281/zenodo.3731417
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3731417.svg)](https://doi.org/10.5281/zenodo.3731417)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5572704.svg)](https://doi.org/10.5281/zenodo.5572704)
 
-[[`arXiv`](https://arxiv.org/abs/2001.00215)]
+[[`arXiv`](https://arxiv.org/abs/2110.05324)]
 
 [[`BibTeX`](#CitingLACE)]
 
@@ -23,8 +23,7 @@ to download the module.
 
 ## Demo
 
-Run `demo.py` in Python IDE (e.g., Spyder) or command line. To evaluate performance,
-run `View_Results.py` (if results are saved out).
+Run `demo.py` in Python IDE (e.g., Spyder) or command line. 
 
 ## Main Functions
 
@@ -61,13 +60,10 @@ https://github.com/GatorSense/Histological_Segmetation
     ├── demo.py   //Run this. Main demo file.
     ├── Demo_Parameters.py // Parameters file for demo.
     ├── Prepare_Data.py  // Load data for demo file.
-    ├── View_Results.py  // Generate visuals and metrics for experiments.
-    └── Visualize_Embeddings.py  //Generate LACE visualizations (target vs. background).
     └── Utils  //utility functions
         ├── Embedding_Model.py  // Generates model with an encoder following the final layer (if necessary). 
         ├── loss_functions.py  // Contains LACE, angular softmax, and feature regularization methods for models.
         ├── Loss_Model.py  // Creates model with backbone and regularization loss.
-        ├── Confusion_mats.py  // Compute confusion matrices for results. 
         ├── Generating_Learning_Curves.py  // Plot training and validation accuracy and error measures.
         ├── Generate_TSNE_visual.py  // Create TSNE visual for results.
         ├── Network_functions.py  // Contains functions to initialize, train, and test model. 
@@ -90,9 +86,10 @@ reference using the following entry.
 
 **Plain Text:**
 
-Peeples, J., McCurley, C., Walker, S., Stewart, D., & Zare, A. (2022). Learnable 
-Adaptive Cosine Estimator (LACE) for Image Classification. IEEE/CVF Winter 
-Conference on Applications of Computer Vision.
+J. Peeples, C. McCurley, S. Walker, D. Stewart, and A. Zare, 
+"Learnable Adaptive Cosine Estimator (LACE) for Image Classification," 
+In Proceedings of the IEEE/CVF Winter Conference on Applications of 
+Computer Vision (WACV), 2022, In Press.
 
 **BibTex:**
 ```

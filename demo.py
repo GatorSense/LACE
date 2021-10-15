@@ -19,7 +19,6 @@ from Utils.Network_functions import initialize_model, train_model, test_model
 #Turn off plotting
 plt.ioff()
 
-# CUDA_LAUNCH_BLOCKING=1
 
 def main(Params):
     
@@ -118,7 +117,7 @@ def main(Params):
                           regularization_method + ' Finished**********')
 
 def Baseline(Params):
-    base_method = ['softmax','LACE']
+    base_method = ['softmax']
 
     #Dataset to use
     Dataset = Params['Dataset'] 
