@@ -5,7 +5,7 @@ _Joshua Peeples, Connor McCurley, Sarah Walker, Dylan Stewart, and Alina Zare_
 
 Note: If this code is used, cite it: Joshua Peeples, Connor McCurley, Sarah Walker, Dylan Stewart, and Alina Zare. 
 (2021, October 15). GatorSense/LACE: Initial Release (Version v1.0). 
-Zendo. https://doi.org/10.5281/zenodo.3731417
+Zendo. https://doi.org/10.5281/zenodo.5572704
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5572704.svg)](https://doi.org/10.5281/zenodo.5572704)
 
 [[`arXiv`](https://arxiv.org/abs/2110.05324)]
