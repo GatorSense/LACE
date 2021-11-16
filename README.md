@@ -54,7 +54,7 @@ The parameters can be set in the following script:
 ## Inventory
 
 ```
-https://github.com/GatorSense/Histological_Segmetation
+https://github.com/GatorSense/LACE
 
 └── root dir
     ├── demo.py   //Run this. Main demo file.
