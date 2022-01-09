@@ -89,7 +89,7 @@ reference using the following entry.
 J. Peeples, C. McCurley, S. Walker, D. Stewart, and A. Zare, 
 "Learnable Adaptive Cosine Estimator (LACE) for Image Classification," 
 In Proceedings of the IEEE/CVF Winter Conference on Applications of 
-Computer Vision (WACV), 2022, In Press.
+Computer Vision (WACV), 2022, pp. 3479-3489, In Press.
 
 **BibTex:**
 ```
@@ -99,5 +99,6 @@ Computer Vision (WACV), 2022, In Press.
   booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   month = {January},
   year = {2022},
+  pages = {3479-3489}
 }
 ```
