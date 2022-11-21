@@ -14,7 +14,7 @@ Zendo. https://doi.org/10.5281/zenodo.5572704
 
 [`arXiv`](https://arxiv.org/abs/2110.05324)
 
-[[`BibTeX`](#CitingLACE)]
+[`BibTeX`](#CitingLACE)
 
 In this repository, we provide the paper and code for the Learnable Adaptive Cosine Estimator (LACE) approach in "Learnable Adaptive Cosine Estimator (LACE) for Image Classification."
 
