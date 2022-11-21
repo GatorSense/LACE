@@ -19,7 +19,7 @@ def Parameters(args):
     #Select dataset
     data_selection = args.data_selection
     Dataset_names = {1:'FashionMNIST', 2: 'SVHN', 3: 'CIFAR10',
-                     4: 'CIFAR100', 55:'CIFAR100_Coarse'}
+                     4: 'CIFAR100', 5:'CIFAR100_Coarse'}
     
     #Flag for feature extraction. False, train whole model. True, only update
     #fully connected and histogram layers parameters (default: False)
