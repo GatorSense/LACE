@@ -8,11 +8,11 @@ Note: If this code is used, cite it: Joshua Peeples, Connor McCurley, Sarah Walk
 Zendo. https://doi.org/10.5281/zenodo.5572704
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5572704.svg)](https://doi.org/10.5281/zenodo.5572704)
 
-[[`IEEE Xplore`](https://ieeexplore.ieee.org/document/9706894)]
+[`IEEE Xplore`](https://ieeexplore.ieee.org/document/9706894)
 
-[[`WACV Repository`](https://openaccess.thecvf.com/content/WACV2022/html/Peeples_Learnable_Adaptive_Cosine_Estimator_LACE_for_Image_Classification_WACV_2022_paper.html)]
+[`WACV Repository`](https://openaccess.thecvf.com/content/WACV2022/html/Peeples_Learnable_Adaptive_Cosine_Estimator_LACE_for_Image_Classification_WACV_2022_paper.html)
 
-[[`arXiv`](https://arxiv.org/abs/2110.05324)]
+[`arXiv`](https://arxiv.org/abs/2110.05324)
 
 [[`BibTeX`](#CitingLACE)]
 
@@ -21,8 +21,8 @@ In this repository, we provide the paper and code for the Learnable Adaptive Cos
 ## Installation Prerequisites
 
 This code uses python, pytorch, and barbar. 
-Please use [[`Pytorch's website`](https://pytorch.org/get-started/locally/)] to download necessary packages.
-Barbar is used to show the progress of model. Please follow the instructions [[`here`](https://github.com/yusugomori/barbar)]
+Please use [`Pytorch's website`](https://pytorch.org/get-started/locally/) to download necessary packages.
+Barbar is used to show the progress of model. Please follow the instructions [`here`](https://github.com/yusugomori/barbar)
 to download the module.
 
 ## Demo
