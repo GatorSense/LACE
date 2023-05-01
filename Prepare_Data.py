@@ -41,7 +41,6 @@ def Prepare_DataLoaders(Network_parameters, split,input_size=224):
         'test': transforms.Compose([
             transforms.Resize(Network_parameters['center_size']),
             transforms.CenterCrop(input_size),
-            transforms.RandomAffine(Network_parameters['degrees']),
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ]),
