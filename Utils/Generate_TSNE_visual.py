@@ -17,7 +17,6 @@ import pdb
 
 def plot_components(data, proj, images=None, ax=None,
                     thumb_frac=0.05, cmap='copper'):
-    # scaler = MinMaxScaler(feature_range=(0,255))
     ax = ax or plt.gca()
     
     ax.plot(proj[:, 0], proj[:, 1], '.k')
@@ -31,10 +30,6 @@ def plot_components(data, proj, images=None, ax=None,
                 # don't show points that are too close
                 continue
             shown_images = np.vstack([shown_images, proj[i]])
-            # #Rescale images to be 0 to 255
-            # for channel in range(0,images.shape[1]):
-            #     scaler.fit(images[i,channel])
-            #     scaler.fit_transform(images[i,channel])
             imagebox = offsetbox.AnnotationBbox(
                 offsetbox.OffsetImage(images[i],zoom=.2, cmap=cmap),
                                       proj[i])
@@ -112,56 +107,6 @@ def Generate_TSNE_visual(dataloaders_dict,model,sub_dir,device,class_names,
         
         fig9.savefig((sub_dir + 'TSNE_Visual_Train_Data_Images.png'),dpi=fig9.dpi)
         plt.close()
-    
-
-        if (Separate_TSNE):
-            conv_features_embedded = TSNE(n_components=2,verbose=1).fit_transform(features_extracted[:,:num_feats//2])
-            hist_features_embedded = TSNE(n_components=2,verbose=1).fit_transform(features_extracted[:,num_feats//2:])
-            
-            GT_val = GT_val[1:]
-            indices_train = indices_train[1:]
-            fig7, ax7 = plt.subplots()
-            colors = colormap.rainbow(np.linspace(0, 1, len(class_names)))
-            for texture in range (0, len(class_names)):
-                x = conv_features_embedded[[np.where(GT_val==texture)],0]
-                y = conv_features_embedded[[np.where(GT_val==texture)],1]
-                
-                plt.scatter(x, y, color = colors[texture,:])
-             
-            plt.title('TSNE Visualization of Training Data Convolution Features')
-            plt.legend(class_names)
-            
-            fig7.savefig((sub_dir + 'TSNE_Visual_Train_Data_Conv_feats.png'), dpi=fig7.dpi)
-            plt.close()
-            
-            fig10, ax10= plt.subplots()
-            plot_components(features_extracted,conv_features_embedded,images=saved_imgs)
-            # plt.title('TSNE Visualization of Test Data Features with Images')
-            plt.grid('off')
-            plt.axis('off')
-            
-            fig10.savefig((sub_dir + 'TSNE_Visual_Train_Conv_Data_Images.png'))
-            plt.close()
-            
-            fig8, ax8 = plt.subplots()
-            colors = colormap.rainbow(np.linspace(0, 1, len(class_names)))
-            for texture in range (0, len(class_names)):
-                x = hist_features_embedded[[np.where(GT_val==texture)],0]
-                y = hist_features_embedded[[np.where(GT_val==texture)],1]
-                
-                plt.scatter(x, y, color = colors[texture,:])
-             
-            plt.title('TSNE Visualization of Training Data Histogram Features')
-            plt.legend(class_names)
-            fig8.savefig((sub_dir + 'TSNE_Visual_Train_Data_Hist_feats.png'), dpi=fig8.dpi)
-            
-            fig11, ax11 = plt.subplots()
-            plot_components(features_extracted,hist_features_embedded,images=saved_imgs)
-            # plt.title('TSNE Visualization of Test Data Features with Images')
-            plt.grid('off')
-            plt.axis('off')
-            fig11.savefig((sub_dir + 'TSNE_Visual_Train_Hist_Data_Images.png'))
-            plt.close()
         
         # del dataloaders_dict,features_embedded
         torch.cuda.empty_cache()
